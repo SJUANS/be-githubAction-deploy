@@ -37,7 +37,7 @@ jobs:
         arguments: build
 
     - name: Make zip file #build 후 프로젝트 압축
-      run: zip -r ./practice-deploy.zip
+      run: zip -r ./practice-deploy.zip .
       shell: bash
 
     - name: Configure AWS credentials # Github Secret에 등록한 (Secret) Access Key 로 권한확인하기(직접 작성 x)
